@@ -26,6 +26,22 @@ LOCAL_MODULE_CLASS := FIRMWARE
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := qca/tfbtfw11.tlv
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_PATH := $(local_target_dir)
+LOCAL_SRC_FILES := $(LOCAL_MODULE)
+LOCAL_MODULE_CLASS := FIRMWARE
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := qca/tfbtnv11.bin
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_PATH := $(local_target_dir)
+LOCAL_SRC_FILES := $(LOCAL_MODULE)
+LOCAL_MODULE_CLASS := FIRMWARE
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := wlan/cfg.dat
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_PATH := $(local_target_dir)
