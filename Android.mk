@@ -26,6 +26,22 @@ LOCAL_SRC_FILES := $(LOCAL_MODULE)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := rampatch_00230302.bin
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(local_target_dir)/qca
+LOCAL_SRC_FILES := qca/tfbtfw11.tlv
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := nvm_00230302.bin
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(local_target_dir)/qca
+LOCAL_SRC_FILES := qca/tfbtnv11.bin
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := tfbtfw11.tlv
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := ETC
